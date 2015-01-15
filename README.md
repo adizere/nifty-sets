@@ -1,2 +1,2 @@
 # nifty-sets
-Compact sets implementation in Haskell.
+Packed sets implementation in Haskell.
