@@ -18,14 +18,14 @@ mySpecs =
         it "tests the `notMember` function on an empty set" $ do
             PS.notMember 0 p `shouldBe` True
 
-        let p = PS.singleton 888 :: PS.PackedSet Int
+        let s = PS.singleton 888 :: PS.PackedSet Int
         it "constructs a singleton set" $ do
-            PS.null p `shouldBe` False
-            PS.size p `shouldBe` 1
-            PS.member 0 p `shouldBe` False
-            PS.member 888 p `shouldBe` True
-            PS.notMember 0 p `shouldBe` True
-            PS.notMember 888 p `shouldBe` False
+            PS.null s `shouldBe` False
+            PS.size s `shouldBe` 1
+            PS.member 0 s `shouldBe` False
+            PS.member 888 s `shouldBe` True
+            PS.notMember 0 s `shouldBe` True
+            PS.notMember 888 s `shouldBe` False
 
 
 main :: IO ()
